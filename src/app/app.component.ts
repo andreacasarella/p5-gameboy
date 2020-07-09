@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
   }
 
 
-  @HostListener('document:keypress', ['$event'])
+  @HostListener('document:keydown', ['$event'])
   keyPress(event: KeyboardEvent) {
     if (event.keyCode === KEY_CODE.UP_ARROW && !this.keys.includes(CTRL.UP_ARROW))  
         this.keys.push(CTRL.UP_ARROW);
@@ -85,6 +85,7 @@ export class AppComponent implements OnInit {
         this.keys.push(CTRL.START_BUTTON);   
 
     this.ctrl.click(this.keys);
+    event.stopPropagation();
   }
 
   @HostListener('window:keyup', ['$event'])
@@ -113,7 +114,8 @@ export class AppComponent implements OnInit {
     if (event.keyCode === KEY_CODE.START_BUTTON && this.keys.includes(CTRL.START_BUTTON)) 
         this.keys = this.keys.filter(p => p != CTRL.START_BUTTON);  
     
-    this.ctrl.click(this.keys)
+    this.ctrl.click(this.keys);
+    event.stopPropagation();
   }
 
 }
