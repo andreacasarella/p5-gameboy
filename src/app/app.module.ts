@@ -1,8 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TetrisModule } from './tetris/tetris.module';
+import { ControlsManagerService } from './services/controls-manager.service';
 
 @NgModule({
   declarations: [
@@ -10,6 +12,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    TetrisModule,
     AppRoutingModule
   ],
   providers: [],

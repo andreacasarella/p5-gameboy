@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'GillSans';
+    src: url('GillSans-Italic.eot');
+    src: url('GillSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('GillSans-Italic.woff2') format('woff2'),
+        url('GillSans-Italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
