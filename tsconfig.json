@@ -17,5 +17,8 @@
       "path": "./e2e/tsconfig.json"
     }
   ],
-  "types": ["src/typings.d.ts"]
+  "types": [
+    "src/typings.d.ts",
+    "node_modules/@typings/p5/lib/addons/p5.sound.d.ts"
+  ]
 }

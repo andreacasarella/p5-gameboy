@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
 export class ControlsManagerService {
 
   private static instance: ControlsManagerService;
@@ -20,7 +17,7 @@ export class ControlsManagerService {
   }
 
   click(control?: string[]): void {
-    console.log('emit ', control);
+    //  console.log('emit ', control);
     this.control.next(control);
   }
 

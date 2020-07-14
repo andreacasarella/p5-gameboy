@@ -27,28 +27,28 @@
     </div>
     <div class="controls">
         <div class="arrows">
-            <button id="left" class="arrow left" (touchstart)="touch($event)" (touchend)="touch($event)"><span>left</span></button>
-            <button id="up" class="arrow up" (touchstart)="touch($event)" (touchend)="touch($event)"><span>up</span></button>
-            <button id="right" class="arrow right" (touchstart)="touch($event)" (touchend)="touch($event)"><span>right</span></button>
-            <button id="down" class="arrow down" (touchstart)="touch($event)" (touchend)="touch($event)"><span>down</span></button>
+            <button [id]="keyCodes.ARROW_LEFT" class="arrow left" (touchstart)="touch($event)" (touchend)="touch($event)"><span>left</span></button>
+            <button [id]="keyCodes.ARROW_UP" class="arrow up" (touchstart)="touch($event)" (touchend)="touch($event)"><span>up</span></button>
+            <button [id]="keyCodes.ARROW_RIGHT" class="arrow right" (touchstart)="touch($event)" (touchend)="touch($event)"><span>right</span></button>
+            <button [id]="keyCodes.ARROW_DOWN" class="arrow down" (touchstart)="touch($event)" (touchend)="touch($event)"><span>down</span></button>
         </div>
         <div class="buttons">
             <div class="button">
-                <button id="b" (touchstart)="touch($event)" (touchend)="touch($event)"></button>
+                <button [id]="keyCodes.KEY_B" (touchstart)="touch($event)" (touchend)="touch($event)"></button>
                 <label>b</label>
             </div>
             <div class="button">
-                <button id="a" (touchstart)="touch($event)" (touchend)="touch($event)"></button>
+                <button [id]="keyCodes.KEY_A" (touchstart)="touch($event)" (touchend)="touch($event)"></button>
                 <label>a</label>
             </div>
         </div>
         <div class="actions">
             <div class="button">
-                <button id="select" (touchstart)="touch($event)" (touchend)="touch($event)"></button>
+                <button [id]="keyCodes.KEY_SELECT" (touchstart)="touch($event)" (touchend)="touch($event)"></button>
                 <label>select</label>
             </div>
             <div class="button">
-                <button id="start" (touchstart)="touch($event)" (touchend)="touch($event)"></button>
+                <button [id]="keyCodes.KEY_START" (touchstart)="touch($event)" (touchend)="touch($event)"></button>
                 <label>start</label>
             </div>
         </div>

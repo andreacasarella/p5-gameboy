@@ -14,5 +14,8 @@
     "module": "es2020",
     "lib": ["es2018", "dom"]
   },
-  "files": ["./src/typings.d.ts"]
+  "files": [
+    "./src/typings.d.ts",
+    "./node_modules/@types/p5/lib/addons/p5.sound.d.ts"
+  ]
 }
